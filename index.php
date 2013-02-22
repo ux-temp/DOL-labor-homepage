@@ -332,10 +332,12 @@
 			</div>
 			<div style="float:right" class="gov-widget-outter" id="gov-widget-outter">
 				<div class="gov-widget" id="gov-widget-iframe-wrapper">
-					<?php // noscript fallback for gov widget 
-						$iframeCode = '<iframe id="govMessageBox-NoScript" src="http://www.governor.ny.gov/sites/default/themes/governor/govwidget.php" title="Governor Andrew M. Cuomo website" target="_none" width="250px" height="375px" scrolling="no" frameborder="0" border="0"><p>Your browser does not support iframes.</p>'
+					<?php 
+						// code for widget. watch out for mismatched quotes.
+						$iframeCode = '<iframe id="govMessageBox-NoScript" src="http://www.governor.ny.gov/sites/default/themes/governor/govwidget.php" title="Governor Andrew M. Cuomo website" target="_none" width="250px" height="375px" scrolling="no" frameborder="0" border="0"><p>Your browser does not support iframes.</p></iframe>';
 					?>
 					<noscript>
+						<?php // noscript fallback for gov widget ?>
 						<?=$iframeCode ?>
 					</iframe>
 					</noscript>
