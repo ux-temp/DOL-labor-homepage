@@ -331,21 +331,23 @@
 				</div>	
 			</div>
 			<div style="float:right" class="gov-widget-outter" id="gov-widget-outter">
-				<div class="gov-widget" style="height:375px;" id="gov-widget-iframe-wrapper">
+				<div class="gov-widget" id="gov-widget-iframe-wrapper">
+					<?php // noscript fallback for gov widget ?>
 					<noscript>
 					<iframe id="govMessageBox-NoScript" src="http://www.governor.ny.gov/sites/default/themes/governor/govwidget.php" title="Governor Andrew M. Cuomo website" target="_none" width="250px" height="375px" scrolling="no"><p>Your browser does not support iframes.</p>
 					</iframe>
 					</noscript>
 				</div>
 				<script>
+					<?php // script insert the widget into div section ?>
+					// over lay div 
 					overdiv = document.createElement("div");
 					overdiv.id = "govWidgetLoad";
 					document.getElementById( 'gov-widget-outter' ).appendChild( overdiv );
 					overdiv.innerHTML = '<img src="images/loading.gif" style="margin: 175px auto 0 auto; display:block" />';
-					
+					// insert iframe
 					document.getElementById( 'gov-widget-iframe-wrapper' ).innerHTML = '<iframe id="govMessageBox" src="http://www.governor.ny.gov/sites/default/themes/governor/govwidget.php" title="Governor Andrew M. Cuomo website" target="_none" width="250px" height="375px" scrolling="no"><p>Your browser does not support iframes.</p>';
 				</script>
-
 			</div>
 		</div>
 	<!-- End of Persona Widget -->
@@ -389,6 +391,7 @@
 <script>
 	$(document).ready(function() {
 		ux.load("expandables");
+		//expandables for language widget
 	});
 </script>
 <?php include $templatePath.'footer2.php'; ?>

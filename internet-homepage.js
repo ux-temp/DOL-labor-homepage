@@ -23,10 +23,9 @@ $(document).ready(function() {
 		setCookie("persona",tab,365);
 	});
 
-	//$(".gov-widget").hide();
-	//fadeInGovWidget();
+	//fade in gov widget
 	$('#govMessageBox').ready( function () {
-		fadeInGovWidget();
+		$("#govWidgetLoad").delay(1000).fadeOut(1000)
 	});
 });
 
@@ -49,12 +48,3 @@ function getCookie(c_name) {
 		}
 	}
 }
-
-
-// **Gov Widget Hides then gracefully fades into page **//
-function fadeInGovWidget(){
-	
-	//$("#govMessageBox").attr( 'src', 'http://www.governor.ny.gov/sites/default/themes/governor/govwidget.php' );
-	$("#govWidgetLoad").delay(1000).fadeOut(1000)
-	
-};
