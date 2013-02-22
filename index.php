@@ -43,11 +43,11 @@
 }
 #govWidgetLoad{
 	background:#fff; 
-	height:380px; 
-	width: 250px; 
+	height:382px; 
+	width:242px; 
 	float:none; 
 	position:absolute; 
-	right: 0px; 
+	right:0px; 
 }
 
 </style>
@@ -332,9 +332,11 @@
 			</div>
 			<div style="float:right" class="gov-widget-outter" id="gov-widget-outter">
 				<div class="gov-widget" id="gov-widget-iframe-wrapper">
-					<?php // noscript fallback for gov widget ?>
+					<?php // noscript fallback for gov widget 
+						$iframeCode = '<iframe id="govMessageBox-NoScript" src="http://www.governor.ny.gov/sites/default/themes/governor/govwidget.php" title="Governor Andrew M. Cuomo website" target="_none" width="250px" height="375px" scrolling="no" frameborder="0" border="0"><p>Your browser does not support iframes.</p>'
+					?>
 					<noscript>
-					<iframe id="govMessageBox-NoScript" src="http://www.governor.ny.gov/sites/default/themes/governor/govwidget.php" title="Governor Andrew M. Cuomo website" target="_none" width="250px" height="375px" scrolling="no"><p>Your browser does not support iframes.</p>
+						<?=$iframeCode ?>
 					</iframe>
 					</noscript>
 				</div>
@@ -346,7 +348,7 @@
 					document.getElementById( 'gov-widget-outter' ).appendChild( overdiv );
 					overdiv.innerHTML = '<img src="images/loading.gif" style="margin: 175px auto 0 auto; display:block" />';
 					// insert iframe
-					document.getElementById( 'gov-widget-iframe-wrapper' ).innerHTML = '<iframe id="govMessageBox" src="http://www.governor.ny.gov/sites/default/themes/governor/govwidget.php" title="Governor Andrew M. Cuomo website" target="_none" width="250px" height="375px" scrolling="no"><p>Your browser does not support iframes.</p>';
+					document.getElementById( 'gov-widget-iframe-wrapper' ).innerHTML = '<?=$iframeCode ?>';
 				</script>
 			</div>
 		</div>
