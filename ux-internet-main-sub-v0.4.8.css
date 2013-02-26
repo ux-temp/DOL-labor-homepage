@@ -1,8 +1,9 @@
 
 
-.website-main #content { margin-top: 40px; }
-
-#content { min-height: 300px; }
+#content { 
+	margin-top: 40px; 
+	min-height: 300px; 
+}
 .msg-box .ux-msg {
 	margin: 0 !important;
 }
@@ -122,7 +123,7 @@
 	float: right;
 }
 
-.ie7.website-main .gov-widget, ie8.website-main .gov-widget {
+.ie7.website-main .gov-widget, .ie8.website-main .gov-widget {
 	border: none;
 }
 
@@ -440,7 +441,7 @@
 	
 }
 
-.ie6.website-main .gov-widget, .ie7.website-main .gov-widget, ie8.website-main .gov-widget {
+.ie6.website-main .gov-widget, .ie7.website-main .gov-widget, .ie8.website-main .gov-widget {
 	border: none;
 }
 
