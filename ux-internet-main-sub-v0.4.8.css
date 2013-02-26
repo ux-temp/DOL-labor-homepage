@@ -273,11 +273,11 @@
 	background: transparent url(images/widget-tabs2.png) no-repeat 0 -287px
 }
 
-#programs-widget-tab .selected-tab a {
+#programs-widget-tab.selected-tab a {
 	background: transparent url(images/widget-tabs2.png) no-repeat 0 -664px;
 }
 
-.persona-tab a:hover{
+.persona-tab a:hover, .persona-tab a:focus  {
 	background-color: #a5a5a5;
 	opacity:0.4;
 	filter:alpha(opacity=40); /* For IE8 and earlier */
