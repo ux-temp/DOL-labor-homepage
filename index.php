@@ -370,9 +370,23 @@
 		<div class="grid_12 omega">
 			<div class="announcement-div dol-container">
 				<div class="ux-content-wrapper">
-					<div class="msg-box">
-						<?php include $domainLabor."/includes/messages/homepage.inc" ?> 
-					</div>
+					<ul class="alert-list">
+						<li>
+							<a href="/careerservices/reemploy.shtm">Re-Employ 2012: Helping NY's Job Seekers - Find an event in your area</a>
+						</li>
+						<li>
+							<a href="/immigrants/language-access-complaint.shtm">Language Access Services</a>
+						</li>
+						<li>
+							<a href="/jobs/regional.shtm">Jobs Express - Find Job Openings In Your Area</a>
+						</li>
+					</ul>	
+					<h2 class="h4 announcement-title">October is Domestic Violence Awareness Month</h2>
+					<p>
+						<!--<a class="annoumcement-img ux-no-link-icon" href="http://www.opdv.ny.gov/public_awareness/campaigns/shinethelight/shinethelight12.html" target="_blank"><img src="images/opdvwebanner.png"></a>
+						-->
+						"Shine the Light on Domestic Violence" is a campaign that connects communities across New York by turning the state purple during October, <a href="http://www.opdv.ny.gov/public_awareness/campaigns/shinethelight/shinethelight12.html" target="_blank">Domestic Violence Awareness Month</a>.<br><br> See <a href="http://www.opdv.ny.gov/" target="_blank"> Office for Prevention of Domestic Violence</a> for details. 
+					</p>
 					<h2 class="h4 announcement-title">Area Unemployment Rates</h2>
 					<p>
 						The State Labor Department is your source for employment data in every region of the state. You'll find information broken down by major metropolitan areas as well as by county. Read the <a href="http://labor.ny.gov/stats/pressreleases/prlaus.shtm">latest report on area unemployment rates</a>.
