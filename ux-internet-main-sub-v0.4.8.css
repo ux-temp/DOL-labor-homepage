@@ -1,9 +1,8 @@
 
 
-#content { 
-	margin-top: 40px; 
-	min-height: 300px; 
-}
+.website-main #content { margin-top: 40px; }
+
+#content { min-height: 300px; }
 .msg-box .ux-msg {
 	margin: 0 !important;
 }
@@ -123,7 +122,7 @@
 	float: right;
 }
 
-.ie7.website-main .gov-widget, .ie8.website-main .gov-widget {
+.ie7.website-main .gov-widget, ie8.website-main .gov-widget {
 	border: none;
 }
 
@@ -189,6 +188,7 @@
 .widget-tab-list {
 	padding-left: 0;
 	margin-bottom: 0;
+	width: 238px;
 	float: left;
 }
 
@@ -232,8 +232,8 @@
 
 
 .persona-tab.selected-tab {
-	background: url(images/active-tab.jpg) no-repeat 0 0;
-	width: 260px;
+	background: url(images/active-tab.png) no-repeat 0 0;
+	width: 238px;
 	position: relative;
 }
 
@@ -270,26 +270,6 @@
 
 #programs-widget-tab a {
 	background: transparent url(images/widget-tabs2.png) no-repeat 0 -287px;
-}
-
-#programs-widget-tab.selected-tab a {
-	background: transparent url(images/widget-tabs2.png) no-repeat 0 -664px;
-}
-
-.persona-tab a:hover, .persona-tab a:focus  {
-	background-color: #a5a5a5 !important;
-	/*opacity:0.4;
-	filter:alpha(opacity=40); /* For IE8 and earlier */
-}
-/*
-#jobseekers-widget-tab {
-	border-radius: 8px 0 0 0;
-	background: url("images/widget-tabs.jpg") 0px 0px;
-}
-
-#jobseekers-widget-tab.selected-tab {
-	background: url("images/widget-tabs.jpg") -222px 0px;
->>>>>>> 4e5155913567609c8d92f577fe80baabf4f38b66
 }
 
 #programs-widget-tab.selected-tab a {
@@ -333,8 +313,8 @@
 
 .persona-widget {
 	display: block;
-	height: 379px;
-	width: 682px;
+	height: 380px;
+	width: 694px;
 	border: 1px solid #D5D5D5;
 	float: left;
 	border-radius: 8px 8px 8px 8px;
@@ -418,7 +398,7 @@
 	
 }
 
-.ie6.website-main .gov-widget, .ie7.website-main .gov-widget, .ie8.website-main .gov-widget {
+.ie6.website-main .gov-widget, .ie7.website-main .gov-widget, ie8.website-main .gov-widget {
 	border: none;
 }
 
