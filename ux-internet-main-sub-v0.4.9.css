@@ -109,7 +109,7 @@
 	margin: 10px;
 }
 
-
+/* begin gov widget code*/
 .website-main .gov-widget  {
     border: 1px solid #192A3A;
         background: #003366;
@@ -123,6 +123,15 @@
 .ie7.website-main .gov-widget, ie8.website-main .gov-widget {
 	border: none;
 }
+#govWidgetLoad{ /* fade in overlay div */
+	background:#fff; 
+	height:382px; 
+	width:242px; 
+	float:none; 
+	position:absolute; 
+	right:0px; 
+}
+/* end gov widget code*/
 
 .website-main .announcement-div {
 	width: 440px;
