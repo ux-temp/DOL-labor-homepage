@@ -1,0 +1,54 @@
+#jobseekers-container,
+#businesses-container,
+#community-container,
+#programs-container {
+	background: url(images/widget-background.png) no-repeat -19px 0;
+}
+
+.persona-widget {
+	background: url(images/widget-background.png) no-repeat 219px 0;
+}
+
+.widget-content-wrapper {
+	margin-left: 8px;
+	margin-top: 12px;
+}
+
+.widget-content-wrapper a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+.widget-content-wrapper h3 {
+	background: #fff;
+	border-radius: 4px;
+	padding: 4px;
+	margin-right: 24px;
+}
+
+.widget-panel-wrapper h3 {
+	background: #fff;
+	border-radius: 4px;
+	padding: 4px;
+	margin-right: 24px;
+	margin-top: 16px;
+	padding-left: 10px;
+}
+
+.more-resources {
+	margin: 0 33px;
+	top: -12px;
+}
+
+.widget-content-wrapper ul {
+	padding-left: 4px;
+	margin-left: 6px !important;
+}
+
+.widget-content-wrapper ul li ul li {
+	color: #FFF;
+}
+
+.widget-content-wrapper a:hover {
+	text-decoration: underline;
+}	

@@ -1,9 +1,9 @@
-<?php include_once $_SERVER['DOCUMENT_ROOT'].'/includes/ux_template_php/vars.php'; ?>
+<?php include_once $_SERVER['DOCUMENT_ROOT'].'/includes/ux_template_php_upgrade/vars.php'; ?>
 <?php include  $templatePath.'doctype.php'; ?>
 <title>New York State Department of Labor</title>
 <?php include 'main-sub-common-header.inc' ?>
 <link rel="stylesheet" type="text/css" href="/includes/language-widget/css/language-style.css">
-
+<link rel="stylesheet" type="text/css" href="app.css">
 <style>
 #gov-name {
 	display:block;
@@ -157,10 +157,10 @@
 							<div class="clearfix">
 								<div class="widget-panel-wrapper">
 									<div>
-										<a href="/careerservices/CareerServicesIndex.shtm"><img src="images/find-a-job.jpg" alt="Find a Job"><!-- <img src="/css/apps/css/images/find-a-job.jpg"> --></a>
 										<div class="widget-content-wrapper">
 											<ul>
-												<li><a href="/workforcenypartners/osview.asp">One-Stop Career Centers</a></li>
+												<li><a href="/careerservices/CareerServicesIndex.shtm">Find a Job</a></li>
+												<li><a href="/workforcenypartners/osview.asp">Career Centers</a></li>
 												<li><a href="/careerservices/planyourcareer/planningyourcareerindex.shtm">Career Development</a></li>
 												<li><a href="/careerservices/findajob/jobfairrecruitmentsindex.shtm">Career Fairs and Recruitments</a></li>
 												<li><a href="/apprenticeship/general/registration.shtm">Apprenticeship</a></li>
@@ -179,9 +179,9 @@
 								</div>
 								<div class="widget-panel-wrapper">
 									<div>
-										<a href="/unemploymentassistance.shtm"><img src="images/get-assistance.jpg" alt="Unemployment Assistance"><!-- <img src="/css/apps/css/images/get-assistance.jpg"> --></a>
 										<div class="widget-content-wrapper">
 											<ul>
+												<li><a href="/unemploymentassistance.shtm">Get Unemployment Assistance</a></li>
 												<li><a href="/ui/how_to_file_claim.shtm">How to File a Claim</a></li>
 												<li><a href="https://ui.labor.state.ny.us/UBC/home.do?FF_LOCALE=1">File a Claim</a></li>
 												<li><a href="https://ui.labor.state.ny.us/UBC/home.do?FF_LOCALE=1">Claim Weekly Benefits</a></li>
@@ -222,10 +222,7 @@
 								</div>
 								<div class="widget-panel-wrapper">
 									<div>
-										<h3 style="font-size: 14px; margin-left: 12px; letter-spacing: -1px; margin-top: 20px;">Unemployment Insurance</h3>
-										<div class="widget-important-message">
-											<a href="/legal/construction-industry-fair-play-act.shtm">New Requirements for Construction Employers</a>
-										</div>
+										<h3 style="font-size: 14px; margin-left: 8px; letter-spacing: -1px; margin-top: 16px;">Unemployment Insurance</h3>
 										<div class="widget-content-wrapper">
 											<ul style="margin-left: -10px;">
 												<li><a href="/ui/employer.shtm">Employer Overview of Unemployment Insurance</li>
