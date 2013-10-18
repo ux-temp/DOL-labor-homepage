@@ -112,10 +112,12 @@
 
 .website-main .gov-widget  {
     border: 1px solid #192A3A;
+        background: #003366;
     border-radius: 8px;
-    height: 375px;
+    height: 380px;
     overflow: hidden;
     width: 240px;
+        float: right;
 }
 
 .ie7.website-main .gov-widget, ie8.website-main .gov-widget {

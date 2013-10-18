@@ -112,12 +112,28 @@
 					</p>
 				</div>	
 			</div>
-			<div style="float:right" class="gov-widget-outter">
-				<div class="gov-widget">
-					<iframe src="http://www.governor.ny.gov/sites/default/themes/governor/govwidget.php" width="250px" 
-					height="375px" scrolling="no"><p>Your browser does not support iframes.</p>
-					</iframe>
-				</div>
+			<div style="float:right" class="gov-widget-outter" id="gov-widget-outter">
+					<div class="gov-widget" id="gov-widget-iframe-wrapper">
+							<?php 
+									// code for widget. watch out for mismatched quotes.
+									$iframeCode = '<iframe id="govMessageBox-NoScript" src="http://www.governor.ny.gov/sites/default/themes/governor/govwidget.php" title="Governor Andrew M. Cuomo website" target="_none" width="250px" height="375px" scrolling="no" frameborder="0" border="0"><p>Your browser does not support iframes.</p></iframe>';
+							?>
+							<noscript>
+									<?php // noscript fallback for gov widget ?>
+									<?=$iframeCode ?>
+							</iframe>
+							</noscript>
+					</div>
+					<script>
+							<?php // script insert the widget into div section ?>
+							// over lay div 
+							overdiv = document.createElement("div");
+							overdiv.id = "govWidgetLoad";
+							document.getElementById( 'gov-widget-outter' ).appendChild( overdiv );
+							overdiv.innerHTML = '<img src="images/loading.gif" style="margin: 175px auto 0 auto; display:block" />';
+							// insert iframe
+							document.getElementById( 'gov-widget-iframe-wrapper' ).innerHTML = '<?=$iframeCode ?>';
+					</script>
 			</div>
 		</div>
 	</div>
@@ -129,6 +145,12 @@
 <script>
 	$(document).ready(function() {
 		ux.load("expandables");
+		
+		//fade in gov widget
+		$('#govMessageBox').ready( function () {
+			$("#govWidgetLoad").delay(1000).fadeOut(1000)
+		});
+	
 	}); 
 </script>
 <?php include $templatePath.'footer2.php'; ?>
