@@ -1,0 +1,205 @@
+
+
+#content { min-height: 300px; }
+.msg-box .ux-msg {
+	margin: 4px 0 !important;
+}
+
+.website-main .msg-box { margin-bottom:10px;}
+
+.website-main #page-wrap { padding-bottom: 0; }
+
+.website-main #page-wrap {
+	border: none;
+	background: none;
+	box-shadow: none;
+}
+
+.website-main .persona {
+	display: block;
+	height: 300px;
+	width: auto;
+}
+
+.website-main .individuals {
+	background: url("/main/images/individuals.jpg") no-repeat 0 -300px;
+	border-radius: 8px;
+}
+.website-main .individuals:hover, .website-main .individuals:focus {
+	background-position: 0 0;
+}
+
+.website-main .businesses {
+	background: url("/main/images/businesses.jpg") no-repeat 0 -300px;
+	border-radius: 8px;
+}
+.website-main .businesses:hover, .website-main .businesses:focus{
+	background-position: 0 0;
+}
+
+.website-main .research {
+	background: url("/main/images/research.jpg") no-repeat 0 -300px;
+	border-radius: 8px;
+}
+.website-main .research:hover, .website-main .research:focus{
+	background-position: 0 0;
+}
+
+.website-main .small-items {
+	display: block;
+	height: 90px;
+	width: auto;
+}
+.website-main .small-items-container {
+	margin-bottom: 15px;
+}
+
+.website-main .about-labor {
+	background: url("/main/images/about-labor.jpg") no-repeat 0 -90px;
+	border-radius: 8px;
+}
+.website-main .about-labor:hover , .website-main .about-labor:focus{
+	background-position: 0 0;
+}
+
+.website-main .search-for-job {
+	background: url("/main/images/job-search.jpg") no-repeat 0 -90px;
+	border-radius: 8px;
+}
+.website-main .search-for-job:hover, .website-main .search-for-job:focus {
+	background-position: 0 0;
+}
+
+.website-main .get-assistance {
+	background: url("/main/images/unemployment.jpg") no-repeat 0 -90px;
+	border-radius: 8px;
+}
+.website-main .get-assistance:hover, .website-main .get-assistance:focus{
+	background-position: 0 0;
+}
+
+/*Subpage Stying*/
+
+.website-main-subpage .subpage-links {
+	margin: 0;
+}
+
+.website-main-subpage .subpage-links h2 {
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+
+.website-main-subpage .subpage-links ul {
+	list-style-type:none;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+
+.website-main-businesses #tab-businesses, .website-main-individuals #tab-individuals, .website-main-research #tab-research, .website-main-other #tab-other {
+	background: #FFFFFF;
+}
+
+
+.website-main-subpage .jQTabs .ux-content-wrapper {
+	margin: 25px;
+}
+
+
+.website-main-individuals .widget-job-search .ux-content-wrapper  {
+	margin: 10px;
+}
+
+
+.website-main .gov-widget  {
+    border: 1px solid #192A3A;
+    border-radius: 8px;
+    height: 375px;
+    overflow: hidden;
+    width: 240px;
+}
+
+.ie7.website-main .gov-widget, ie8.website-main .gov-widget {
+	border: none;
+}
+
+.website-main .announcement-div {
+	width: 440px;
+	float: left;
+	border-radius: 8px;
+	background: #FFF;
+	overflow: hidden;
+
+}
+
+
+.website-main .announcement-title{
+	margin-top: 18px;
+	margin-left: 6px;
+}
+
+.website-main .promo-button.margin-bottom-none {
+	margin: 0 !important;
+}
+
+.website-main .top-promo-button a {
+	background: url("/main/images/one-stop-button.jpg") no-repeat 0 0;
+	border-radius: 8px;
+	display: block;
+	height: 178px;
+	width: auto;
+}
+
+.website-main .middle-promo-button a {
+	background: url("/main/images/how-to-file-button.jpg") no-repeat 0 0;
+	border-radius: 8px;
+	display: block;
+	height: 80px;
+	width: auto;
+}
+
+.website-main .bottom-promo-button a {
+	background: url("/main/images/ui-calculator-button.jpg") no-repeat 0 0;
+	border-radius: 8px;
+	display: block;
+	height: 80px;
+	width: auto;
+}
+
+.website-main .promo-button {
+	height: 81px;
+	margin-bottom: 19px !important;
+}
+
+.website-main .large-promo-button {
+	height: 162px;
+	margin-bottom: 20px !important;
+}
+
+
+.website-main .menu-column {
+	float:left;
+	width: 25%;
+	max-width: 25%;
+	min-width: 16%;
+}
+.website-main .sub-nav  ul{
+	list-style: none;
+	padding-left: 10px;
+}
+.website-main .sub-nav>nav>ul>li>a {
+	font-size: 1.5em;
+	font-weight: 500;
+	text-decoration: none;
+}
+.website-main .sub-nav>nav>ul>li {	
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #ededed;
+/*
+x-moz-border-image: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 10%, #ededed 30%, #ededed 70%, #ffffff 90%, #ffffff 100%); 
+x-webkit-border-image: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(10%,#ffffff), color-stop(30%,#ededed), color-stop(70%,#ededed), color-stop(90%,#ffffff), color-stop(100%,#ffffff)); 
+x-webkit-border-image: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 10%,#ededed 30%,#ededed 70%,#ffffff 90%,#ffffff 100%); 
+x-o-border-image: -o-linear-gradient(left,  #ffffff 0%,#ffffff 10%,#ededed 30%,#ededed 70%,#ffffff 90%,#ffffff 100%); 
+*/
+}
+
