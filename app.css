@@ -1,3 +1,79 @@
+
+/*
+===================== Start Persona Widget CODE ===============================================
+*/
+
+.widget-tab-list {
+	padding-left: 0;
+	margin-bottom: 0;
+	width: 238px;
+	float: left;
+}
+
+.persona-text {
+	padding: 10px;
+	color: #000;
+}
+
+.persona-content {
+	background: #FFF;
+	width: 428px;
+	height: 348px;
+	border-radius: 8px;
+	position: relative;
+	top: 15px;
+	left: 15px;
+}
+
+.persona-tab  {
+	width: 220px;
+	height: 95px;
+	margin: 0;
+	list-style-type: none;
+	
+	background: -moz-linear-gradient(top,  rgba(227,226,222,1) 0%, rgba(213,213,214,1) 100%);  /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(227,226,222,1)), color-stop(100%,rgba(213,213,214,1)));  /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(227,226,222,1) 0%,rgba(213,213,214,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(227,226,222,1) 0%,rgba(213,213,214,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(227,226,222,1) 0%,rgba(213,213,214,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(227,226,222,1) 0%,rgba(213,213,214,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e2de', endColorstr='#d5d5d6',GradientType=0 ); /* IE6-9 */
+}
+
+.persona-tab a:hover,
+.persona-tab a:focus {
+	background-color: #a5a5a5 !important;
+}
+
+#jobseekers-widget-tab.persona-tab a:hover,
+#jobseekers-widget-tab.persona-tab a:focus {
+	border-radius: 8px 0 0 0;
+}
+
+#programs-widget-tab.persona-tab a:hover,
+#programs-widget-tab.persona-tab a:focus {
+	border-radius: 0 0 0 8px;
+}
+
+.persona-tab a {
+	display: block;
+	height: 95px;
+	width: 220px;
+	position: relative;
+}
+
+
+.persona-tab.selected-tab {
+	background: url(images/active-tab.png) no-repeat 0 0;
+	width: 238px;
+	position: relative;
+	filter: none;
+}
+
+.persona-tab.selected-tab a:hover {
+	background: url(images/active-tab.png) no-repeat 0 0 !important;
+}
+
 #jobseekers-container,
 #businesses-container,
 #community-container,
@@ -5,25 +81,119 @@
 	background: url(images/widget-background.png) no-repeat -19px 0;
 }
 
+#jobseekers-widget-tab {
+	border-radius: 8px 0 0 0;
+}
+
+
+#programs-widget-tab {
+	border-radius: 0 0 0 8px;
+}
+
+
+#jobseekers-widget-tab a {
+	background: transparent url(images/widget-tabs2.png) no-repeat 0 4px;
+}
+
+#jobseekers-widget-tab.selected-tab a {
+	background: transparent url(images/widget-tabs2.png) no-repeat 0 -378px;
+}
+
+#jobseekers-widget-tab.selected-tab a:hover,
+#jobseekers-widget-tab.selected-tab a:focus {
+	background: transparent url(images/widget-tabs2.png) no-repeat 0 -378px !important;
+}
+
+#businesses-widget-tab a {
+	background: transparent url(images/widget-tabs2.png) no-repeat 0 -90px;
+}
+
+#businesses-widget-tab.selected-tab a {
+	background: transparent url(images/widget-tabs2.png) no-repeat 0 -478px;
+}
+
+#businesses-widget-tab.selected-tab a:hover,
+#businesses-widget-tab.selected-tab a:focus {
+	background: transparent url(images/widget-tabs2.png) no-repeat 0 -478px !important;
+}
+
+#community-widget-tab a {
+	background: transparent url(images/widget-tabs2.png) no-repeat 0 -192px;
+}
+
+#community-widget-tab.selected-tab a {
+	background: transparent url(images/widget-tabs2.png) no-repeat 0 -568px;
+}
+
+#community-widget-tab.selected-tab a:hover,
+#community-widget-tab.selected-tab a:focus {
+	background: transparent url(images/widget-tabs2.png) no-repeat 0 -568px !important;
+}
+
+#programs-widget-tab a {
+	background: transparent url(images/widget-tabs2.png) no-repeat 0 -287px;
+}
+
+#programs-widget-tab.selected-tab a {
+	background: transparent url(images/widget-tabs2.png) no-repeat 0 -664px;
+}
+
+#programs-widget-tab.selected-tab a:hover,
+#programs-widget-tab.selected-tab a:focus {
+	background: transparent url(images/widget-tabs2.png) no-repeat 0 -664px !important;
+}
+
+.persona-container {
+	width: 438px;
+	height: 379px;
+	display: none;
+	position: relative;
+}
+
+#jobseekers-container {
+	border-radius: 0 8px 8px 0;
+	display: block;
+}
+
+#businesses-container {
+	border-radius: 0 8px 8px 0;
+}
+
+#community-container {
+	border-radius: 0 8px 8px 0;
+}
+
+#programs-container {
+	border-radius: 0 8px 8px 0;
+}
+
+.widget-container-wrapper {
+	padding-left: 0;
+	margin-bottom: 0;
+	float: right;
+}
+
+
 .persona-widget {
+	display: block;
+	height: 380px;
+	width: 676px;
+	border: 1px solid #D5D5D5;
+	float: left;
+	border-radius: 8px 8px 8px 8px;
 	background: url(images/widget-background.png) no-repeat 219px 0;
 }
 
-.widget-content-wrapper {
-	margin-left: 8px;
-	margin-top: 12px;
-}
-
-.widget-content-wrapper a{
-	color: #FFF;
-	text-decoration: none;
-}
-
-.widget-content-wrapper h3 {
-	background: #fff;
-	border-radius: 4px;
-	padding: 4px;
-	margin-right: 24px;
+.widget-panel-wrapper {
+	display: inline;
+	position: relative;
+	margin: 6px 2px 2px 2px;
+	height: 318px;
+	width: 208px;
+	top: 11px;
+	left: 4px;
+	float: left;
+	line-height: 15px;
 }
 
 .widget-panel-wrapper h3 {
@@ -35,20 +205,132 @@
 	padding-left: 10px;
 }
 
-.more-resources {
-	margin: 0 33px;
-	top: -12px;
+.widget-panel-wrapper img{
+	border-radius: 8px 8px 8px 8px;
 }
 
-.widget-content-wrapper ul {
-	padding-left: 4px;
-	margin-left: 6px !important;
+.widget-panel-wrapper a span{
+	display: block;
+	border: 1px solid #000;
+	height: 75px;
+	width: 190px;
+	margin: 9px 0 22px 0;
+	border-radius: 8px 8px 8px 8px;
 }
 
-.widget-content-wrapper ul li ul li {
+.widget-panel-wrapper img {
+	height: 75px;
+	width: 190px;
+}
+
+.widget-content-wrapper {
+	margin: 12px 10px 31px 8px;
+}
+
+.widget-content-wrapper a{
 	color: #FFF;
+	text-decoration: none;
 }
 
 .widget-content-wrapper a:hover {
 	text-decoration: underline;
 }	
+
+.widget-content-wrapper ul{
+	list-style-type: none;
+	padding-left: 4px;
+	margin-left: 6px !important;
+	text-decoration: none;
+}
+
+.widget-content-wrapper ul li{
+	margin: 0 0 10px;
+}
+
+.widget-content-wrapper ul li ul{
+	list-style-type: disc;
+	padding-left: 25px;
+	font-size: 11px;	
+	margin-top: 7px;
+}
+
+.widget-content-wrapper ul li ul li{
+	color: #FFF;
+	margin: 0 0 5px;
+}
+
+.widget-panel-wrapper .widget-important-message {
+	background: #eaeaea;
+	border-radius: 8px;
+	margin: 10px;
+	padding: 10px 20px;
+	height: auto;
+	font-weight: bold;
+}
+
+.more-resources {
+	margin: 0 33px;
+	top: -12px;
+	height: 40px;
+	position: relative;
+}	
+
+.more-resources  a  {
+	display: block;
+	margin: 8px 0 0 0;
+	float: right;
+	
+}
+
+.ie6.website-main .gov-widget, 
+.ie7.website-main .gov-widget, 
+.ie8.website-main .gov-widget {
+	border: none;
+}
+
+.widgets {
+	margin-top: 30px 0 0 0;
+}
+
+.announcement-div {
+	width: 702px !important;
+	float: left;
+	margin-top: 18px;
+	margin-left: -4px;
+	border-radius: 8px;
+	background: #FFF;
+	overflow: hidden;
+}
+
+.website-main .gov-widget {
+	border: 1px solid #192A3A;
+	background: #003366;
+	border-radius: 8px;
+	height: 380px;
+	overflow: hidden;
+	width: 240px;
+	float: right;
+}
+
+/*
+===================== End Persona Widget CODE ===============================================
+*/
+
+ul.alert-list {
+	list-style: none;
+	margin-left: 10px;
+    padding-left: 6px;
+	font-size: 14px;
+}
+ul.alert-list li{
+	text-indent: -15px;
+}
+
+.alert-list  li:before{
+	content: "\00BB";
+	color: #446880;	
+	font-weight: bold;
+	font-size: 14px;
+	position: relative !important;
+	top: -2px;
+}
