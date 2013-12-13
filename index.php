@@ -97,27 +97,38 @@
 			</div>
 		</div>
 		<div class="grid_12 omega">
-			<div class="announcement-div dol-container">
-				<div class="ux-content-wrapper">
+			<div class="dol-container" id="announcement-div" >
+				<div  class="ux-content-wrapper">
 					<div class="msg-box">
 						<?php include $domainLabor."/includes/messages/homepage.inc" ?> 
 					</div>
-					<h2 class="h4 announcement-title">Area Unemployment Rates</h2>
-					<p>
-						The State Labor Department is your source for employment data in every region of the state. You'll find information broken down by major metropolitan areas as well as by county. Read the <a href="http://labor.ny.gov/stats/pressreleases/prlaus.shtm">latest report on area unemployment rates</a>.
-					</p>
-					<h2 class="h4 announcement-title">Statewide Jobs Data</h2>
-					<p>
-						What is the current unemployment rate in New York State? What industries gained the most jobs in the past month? You will find that information and more in our <a href="http://labor.ny.gov/stats/pressreleases/pruistat.shtm">latest job numbers report</a>. 
-					</p>
+					<div id="announcement-messages-div">
+						<?php include $domainLabor."/includes/messages/homepage-announcements.inc" ?> 
+					</div>
 				</div>	
 			</div>
-			<div style="float:right" class="gov-widget-outter">
-				<div class="gov-widget">
-					<iframe src="http://www.governor.ny.gov/sites/default/themes/governor/govwidget.php" width="250px" 
-					height="375px" scrolling="no"><p>Your browser does not support iframes.</p>
-					</iframe>
-				</div>
+			<div style="float:right" class="gov-widget-outter" id="gov-widget-outter">
+					<div class="gov-widget" id="gov-widget-iframe-wrapper">
+							<?php 
+									// code for widget. watch out for mismatched quotes.
+									$iframeCode = '<iframe id="govMessageBox-NoScript" src="http://www.governor.ny.gov/sites/default/themes/governor/govwidget.php" title="Governor Andrew M. Cuomo website" target="_none" width="250px" height="375px" scrolling="no" frameborder="0" border="0"><p>Your browser does not support iframes.</p></iframe>';
+							?>
+							<noscript>
+									<?php // noscript fallback for gov widget ?>
+									<?=$iframeCode ?>
+							</iframe>
+							</noscript>
+					</div>
+					<script>
+							<?php // script insert the widget into div section ?>
+							// over lay div 
+							overdiv = document.createElement("div");
+							overdiv.id = "govWidgetLoad";
+							document.getElementById( 'gov-widget-outter' ).appendChild( overdiv );
+							overdiv.innerHTML = '<img src="images/loading.gif" style="margin: 175px auto 0 auto; display:block" />';
+							// insert iframe
+							document.getElementById( 'gov-widget-iframe-wrapper' ).innerHTML = '<?=$iframeCode ?>';
+					</script>
 			</div>
 		</div>
 	</div>
@@ -129,6 +140,12 @@
 <script>
 	$(document).ready(function() {
 		ux.load("expandables");
+		
+		//fade in gov widget
+		$('#govMessageBox').ready( function () {
+			$("#govWidgetLoad").delay(1000).fadeOut(1000)
+		});
+	
 	}); 
 </script>
 <?php include $templatePath.'footer2.php'; ?>

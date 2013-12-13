@@ -109,32 +109,46 @@
 	margin: 10px;
 }
 
-
+/* begin gov widget code*/
 .website-main .gov-widget  {
     border: 1px solid #192A3A;
+        background: #003366;
     border-radius: 8px;
-    height: 375px;
+    height: 380px;
     overflow: hidden;
     width: 240px;
+        float: right;
 }
 
 .ie7.website-main .gov-widget, ie8.website-main .gov-widget {
 	border: none;
 }
+#govWidgetLoad{ /* fade in overlay div */
+	background:#fff; 
+	height:382px; 
+	width:242px; 
+	float:none; 
+	position:absolute; 
+	right:0px; 
+}
+/* end gov widget code*/
 
-.website-main .announcement-div {
+.website-main #announcement-div {
 	width: 440px;
 	float: left;
 	border-radius: 8px;
 	background: #FFF;
 	overflow: hidden;
-
 }
 
-
-.website-main .announcement-title{
+#announcement-messages-div h2, #announcement-messages-div h3, #announcement-messages-div h4  {
+	/* mimic class h4 */
+	font-size: 14px;
+	font-weight: 700;
+	/* custom margins */
 	margin-top: 18px;
 	margin-left: 6px;
+	margin-bottom: 10px;
 }
 
 .website-main .promo-button.margin-bottom-none {
